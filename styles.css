@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  .loading {
+    font-weight: bold;
+    color: blue;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+
+  @media (max-width: 543px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }

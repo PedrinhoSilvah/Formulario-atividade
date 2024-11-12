@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet"href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <form id="myForm">
+        <h3>Formulário</h3>
+        <label>
+          Campo de texto:
+          <input type="text" name="textField" required />
+        </label>
+        <br /><br />
+
+        <label>
+          Caixa de seleção:
+          <select name="selectField" required>
+            <option value="Opção 1">Opção 1</option>
+            <option value="Opção 2">Opção 2</option>
+          </select>
+        </label>
+        <br /><br />
+
+        <label>
+          Radio Button:
+          <input type="radio" name="radioField" value="Opção A" required />
+          Opção A <input type="radio" name="radioField" value="Opção B" /> Opção
+          B
+        </label>
+        <br /><br />
+
+        <label>
+          Checkbox:
+          <input type="checkbox" name="checkboxField" />
+        </label>
+        <br /><br />
+
+        <button type="submit" id="submitButton">Enviar</button>
+        <p id="loadingMessage" class="loading" style="display: none">
+          Enviando...
+        </p>
+      </form>
+
+      <div>
+        <h3>Respostas do Formulário</h3>
+        <table id="responseTable">
+          <thead>
+            <tr>
+              <th>Campo de Texto</th>
+              <th>Caixa de Seleção</th>
+              <th>Radio Button</th>
+              <th>Checkbox</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
